@@ -1,25 +1,15 @@
-@tag
-
+#@tag
 Feature: Test Execution with zephyr
   I want to create the test cycle in zephyr and execute the test case after test method get passed
 
   @tag1
-  Scenario: Execute test case one in zephyr with rest assure API
+  Scenario: 'AT-T1' To check the login functionality with valid input and Execute the test case status in zephyr with API rest Assured
     Given I given valid authentication token
-    When I Execute the test Method for automate first test method passed as we expected
-    And I execute the test result as a pass with test key "AT-T1" when test method works as we expected
-    Then I get the API response test case one staus details
+    And I Execute with selenium code test one to open the log in page and enter valid username "hphari2026@gmail.com" and password "Avengers@2023"
+    And To check test case one and Click the login button it should navigate to home page
 
- @tag1
-  Scenario: Execute test case Two in zephyr with rest assure API
+	@tag2
+  Scenario: 'AT-T2' To check the login functionality with Invalid input and Execute the test case status in zephyr with API rest Assured
     Given I given valid authentication token
-    When I Execute the test Method for automate second test case get blocked as we expected
-    And I execute the test result as a Blocked with test key "AT-T2" when test method works as we expected
-    Then I get the API response test case two staus details
-
-    @tag1
-  Scenario: Execute test case Three in zephyr with rest assure API
-    Given I given valid authentication token
-    When I Execute the test Method to automate third test case get failed as we expected
-    And I execute the test result as a failed with test key "AT-T3" when test method works as we expected
-    Then I get the API response test case three staus details
+    And I Execute with selenium code test two to open the log in page and enter Invalid username and password
+    And To check test case two and Click the login button it should navigate to home page
