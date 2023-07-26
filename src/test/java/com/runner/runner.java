@@ -38,7 +38,6 @@ public class runner {
 		String Auth_token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJjb250ZXh0Ijp7ImJhc2VVcmwiOiJodHRwczovL2FwaS10ZXN0aW5nNDEuYXRsYXNzaWFuLm5ldCIsInVzZXIiOnsiYWNjb3VudElkIjoiNzEyMDIwOmVkNzc5Nzk1LTA3M2QtNDA2OC04YTljLTJjOGM4N2Y0NWQ2NyJ9fSwiaXNzIjoiY29tLmthbm9haC50ZXN0LW1hbmFnZXIiLCJzdWIiOiJiZWJiZTIwZi1kZTEzLTM5NzktOWE5OC0zODFkN2ExYzU1MDQiLCJleHAiOjE3MTk0OTM0NjgsImlhdCI6MTY4Nzk1NzQ2OH0.y9Shrmd9dt0wlB3NsY6AlHenWS5Ws5-cFuRFZhictUc";
 		RestAssured.baseURI = BaseURI;
 		String endpoint = "/testcycles";
-//		String pro_path = "C:\Users\10Decoders\eclipse-workspace\TestExecution_3\src\test\resources\execution_keys.properties";
 		String Pro_path = "C:\\Users\\10Decoders\\eclipse-workspace\\TestExecution_3\\src\\test\\resources\\execution_keys.properties";
 		
 
@@ -75,10 +74,8 @@ public class runner {
 
 	@AfterClass
 	public static void test_executed_Result() {
-//		
 		driver.close();
 		System.out.println("test sucessfully executed");
 
-		 
-}
+	}
 }
